@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+            var time1 = prompt("Digite o nome do primeiro time");
+            var pont1 = parseInt(prompt("Digite a pontuação desse time"));
+            var time2 = prompt("Digite o nome do segundo time");
+            var pont2 = parseInt(prompt("Digite a pontuação desse time"));
+            if (pont1 == pont2) {
+                alert("A partida terminou em empate");
+            } else if (pont1 > pont2) {
+                alert("Vencedor foi o time " + time1);
+            } else {
+                alert("Vencedor foi o time " + time2);
+            }          
+            
+
+        </script>
+    </body>
+</html>

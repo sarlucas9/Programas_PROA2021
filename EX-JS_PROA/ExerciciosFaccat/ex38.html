@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var user = parseInt(prompt("Digite o usuário"));
+            var senha;
+
+            if (user == 9999) {
+                senha = prompt("Digite a senha");
+                if (senha == 9999) {
+                    alert("Acesso liberado");
+                } else {
+                    alert("Senha inválida!");
+                }
+            } else {
+                alert("Usuário inválido!");
+            }    
+
+        </script>
+    </body>
+</html>

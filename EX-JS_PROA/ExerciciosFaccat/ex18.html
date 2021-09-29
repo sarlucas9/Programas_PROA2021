@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var anoNascimento = parseInt(prompt("Digite o ano de nascimento da pessoa"));
+            var anoAtual = parseInt(prompt("Digite o ano atual"));
+
+            if (anoNascimento > anoAtual) {
+                alert("Essas datas são impossíveis");
+            } else {
+                alert("Essa pessoa está com " + (anoAtual - anoNascimento) + " anos de idade.");
+            }
+
+        </script>
+    </body>
+</html>

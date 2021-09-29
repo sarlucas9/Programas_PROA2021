@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var produto = prompt("Digite o nome do produto:");
+            var quantidade = parseInt(prompt("Digite a quantidade que deseja adquirir: "));
+            var preco = parseFloat(prompt("Digite o preço unitário do produto: "));
+            var total = quantidade * preco;
+
+            alert("O preço total de " + produto + ", sem desconto, será R$:" + total )
+            if (quantidade <= 5) {
+                alert("O preço total, contando o desconto, sairá R$:" + (total - total * 0.02))
+            } else if ( quantidade <= 10) {
+                alert("O preço total, contando o desconto, sairá R$:" + (total - total * 0.03))
+            } else {
+                alert("O preço total, contando o desconto, sairá R$:" + (total - total * 0.05))
+            }    
+
+        </script>
+    </body>
+</html>

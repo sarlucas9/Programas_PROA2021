@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var codigo = parseInt(prompt("Digite o número do empregado :"));
+            var anoNascimento = parseInt(prompt("Digite o ano de nascimento do funcionário: "));
+            var anoIngresso = parseInt(prompt("Digite o ano em que o funcionário ingressou na empresa: "));
+
+            if (2021 - anoNascimento >= 65 || 2021 - anoIngresso >= 30 || (2021 - anoNascimento >= 60 && 2021 - anoIngresso >= 25)) {
+                alert("Solicitar Aposentadoria");
+            } else {
+                alert("Não Solicitar Aposentadoria");
+            }    
+
+        </script>
+    </body>
+</html>

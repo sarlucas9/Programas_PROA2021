@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor em reais: "));
+            var vendas = parseFloat(prompt("Digite o valor das vendas do vendedor em reais: "));
+            if (vendas > 1500) {
+                alert("O salário do vendedor, esse mês, será de R$:" + ((((vendas - 1500) * 0.05) + (1500 * 0.03) + salarioFixo)).toFixed(2));
+            } else {
+                alert("O salário do vendedor, esse mês, será de R$:" + ((vendas * 0.03) + salarioFixo).toFixed(2));
+            }
+
+        </script>
+    </body>
+</html>

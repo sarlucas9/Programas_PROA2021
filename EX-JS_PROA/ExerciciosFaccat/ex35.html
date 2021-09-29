@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var combustivel = prompt("Digite o tipo de combustível que desejas comprar: Alcool(A) ou Gasolina(G): ");
+            var litros = parseInt(prompt("Digite a quantidade de litros que deseja comprar: "));
+
+            if (litros < 20) {
+                if (combustivel == "G") {
+                    alert("O preço de " + litros + " litros de gasolina será de R$:" + ((litros - litros * 0.04) * 3.3).toFixed(2));
+                } else {
+                    alert("O preço de " + litros + " litros de alcool será de R$:" + ((litros - litros * 0.03) * 2.9).toFixed(2));
+                }
+            } else if (combustivel == "G") {
+                alert("O preço de " + litros + " litros de gasolina será de R$:" + ((litros - litros * 0.06) * 3.3).toFixed(2));
+            } else {
+                alert("O preço de " + litros + " litros de alcool será de R$:" + ((litros - litros * 0.05) * 2.9).toFixed(2));
+            }            
+
+        </script>
+    </body>
+</html>

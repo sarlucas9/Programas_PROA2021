@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var horas = prompt("Digite a quantidade de horas trabalhadas do funcionário esse mês: ");
+            var salarioHora = prompt("Digite o salário por hora do funcionário em reais: ");
+
+            if (horas > 160) {
+                alert("O funcionário receberá R$:" + (((horas - 160) * 1.5 + 160) * salarioHora).toFixed(2) + " de salário esse mês.");
+            } else {
+            alert("O funcionário receberá R$:" + (horas * salarioHora).toFixed(2) + " de salário esse mês.");
+        }
+
+        </script>
+    </body>
+</html>

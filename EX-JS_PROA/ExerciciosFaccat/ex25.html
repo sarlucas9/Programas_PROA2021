@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Faccat - exercício 10</title>
+    </head>
+    <body>
+        
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+            var conta = parseInt(prompt("Digite o número da conta:"));
+            var saldo = parseFloat(prompt("Digite o saldo da conta em reais:"));
+            var debito = parseFloat(prompt("Digite o débito da conta em reais:"));
+            var credito = parseFloat(prompt("Digite o crédito da conta em reais:"));
+            saldo = saldo + credito - debito;
+            if (saldo >= 0) {
+                prompt("A conta " + conta + " tem o saldo atual de R$:" + (saldo).toFixed(2) + "\nSaldo positivo.");
+            } else {
+                prompt("A conta " + conta + " tem o saldo atual de R$:" + (saldo).toFixed(2) + "\nSaldo negativo.");
+            }
+
+        </script>
+    </body>
+</html>
