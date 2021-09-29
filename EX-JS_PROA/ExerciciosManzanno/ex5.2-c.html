@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 5.2-C da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 5.2 - C </title>
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+        var texto = "";
+        var contador = 1;
+
+        do {
+            if (contador % 4 == 0) {
+                texto += "<br>" + contador; 
+            }
+            contador++;
+        } while (contador <= 200);
+
+        document.getElementById('saida').innerHTML = texto;    
+
+        </script>
+
+    </body>
+
+</html>

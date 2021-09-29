@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 5.2-H da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 5.2 - H </title>
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+       var resposta = "s";
+        var areaTotal = 0;
+
+        do {
+            var comodo;
+            var largura;
+            var comprimento;
+
+            comodo = prompt("Digite o nome do cômodo: ");
+            largura = parseFloat(prompt("Digite a largura do cômodo: "));
+            comprimento = parseFloat(prompt("Digite o comprimento do cômodo: "));
+
+            areaTotal += largura * comprimento;
+
+            resposta = prompt("O comodo" + comodo + "Tem uma área total de " + largura * comprimento + "m²;\n"
+            + "Deseja inserir outro cômodo? (S/N)");
+        } while (resposta == "sim" || resposta == "SIM" || resposta == "s" || resposta == "S");
+
+        alert("A área total da casa é de " + areaTotal + "m².");
+
+        </script>
+
+    </body>
+
+</html>

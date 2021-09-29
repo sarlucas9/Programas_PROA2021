@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 5.2-J da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 5.2 - J </title>
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+        var n1 = parseInt(prompt("Digite o valor a ser dividido"));
+        var n2 = parseInt(prompt("Digite o valor que dividirá o primeiro"));
+        var total = 0;
+
+        do {
+            n1 -= n2;
+            total++;
+        } while (n1 > 0)
+
+        if (n1 < 0) {
+            total--;
+        }
+
+        alert("O resultado inteiro da divisão do primeiro número pelo segundo é " + total);   
+
+        </script>
+
+    </body>
+
+</html>

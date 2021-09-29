@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 7-D da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 7 - D </title>
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+        var tempo = parseInt(prompt("Digite o tempo gasto na viagem em horas: "));
+        var velocidade = parseInt(prompt("Digite a velocidade média na viagem em km/h: "));
+        var distancia = tempo * velocidade
+
+        alert("O gasto de combustível na viagem foi de: " + distancia / 12 + " litros. Os números da viagem são: " +
+            tempo + " Horas gastas, " + velocidade + "kh/h de velocidade média, " + distancia +
+            " kilometros de distância percorrida e " + distancia / 12 + " litros de combustível gastos.");    
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Exercício 5.1-G da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 5.1 - G </title>
+
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+        var contador = 0;
+        var f1 = 1;
+        var f2 = 1;
+        var f3 = 0;
+
+        while (contador < 16) {
+            f1 = f2 + f3;
+            f3 = f2;
+            f2 = f1;
+            alert(f1);
+            contador += 1;
+        }    
+
+        </script>
+
+    </body>
+
+</html>

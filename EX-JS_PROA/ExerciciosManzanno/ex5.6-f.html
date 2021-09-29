@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício 5.6-F da Apostila Manzanno">
+        <meta name="keywords" content="Javascript, JS, Manzanno">
+        <meta name="author" content="Lucas Rocha">
+
+        <title> Manzanno - Exercício 5.6 - F </title>
+    </head>
+    <body>
+
+        <button> <a href="../index.html"> Voltar </a></button>
+
+        <script>
+          
+         var texto = "";
+
+        for (let contador = 0; contador < 200; contador ++) {
+            if (contador % 4 == 0) {
+                texto += "<br>" + contador
+            }
+        }
+
+        document.getElementById('saida').innerHTML = texto;   
+
+        </script>
+
+    </body>
+
+</html>
